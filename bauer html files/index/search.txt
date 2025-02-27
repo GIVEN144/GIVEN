@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Room Search</title>
+    <script>
+        function searchRoom() {
+            // Get the selected hostel and room number for each hostel
+            var hostelWRoom = document.getElementById("ROOM-NUMBER-W").value;
+            var hostelXRoom = document.getElementById("ROOM-NUMBER-X").value;
+            var hostelYRoom = document.getElementById("ROOM-NUMBER-Y").value;
+            var hostelZRoom = document.getElementById("ROOM-NUMBER-Z").value;
+
+            // Check if any hostel room is selected
+            if (hostelWRoom) {
+                alert("Selected W Hostel Room: " + hostelWRoom);
+            } else if (hostelXRoom) {
+                alert("Selected X Hostel Room: " + hostelXRoom);
+            } else if (hostelYRoom) {
+                alert("Selected Y Hostel Room: " + hostelYRoom);
+            } else if (hostelZRoom) {
+                alert("Selected Z Hostel Room: " + hostelZRoom);
+            } else {
+                alert("Please select a room.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <label for="ROOM-NUMBER-W">Select Room for W Hostel:</label>
+    <select id="ROOM-NUMBER-W" name="ROOM-NUMBER-W">
+        <option value="">SELECT ROOM NUMBER FOR W HOSTEL</option>
+        <option value="W101 A">W101 A</option>
+        <option value="W101 B">W101 B</option>
+        <option value="W102 A">W102 A</option>
+        <option value="W102 B">W102 B</option>
+        <!-- Add more options here for W Hostel -->
+    </select>
+
+    <br><br>
+
+    <label for="ROOM-NUMBER-X">Select Room for X Hostel:</label>
+    <select id="ROOM-NUMBER-X" name="ROOM-NUMBER-X">
+        <option value="">SELECT ROOM NUMBER FOR X HOSTEL</option>
+        <option value="X101 A">X101 A</option>
+        <option value="X101 B">X101 B</option>
+        <option value="X102 A">X102 A</option>
+        <option value="X102 B">X102 B</option>
+        <!-- Add more options here for X Hostel -->
+    </select>
+
+    <br><br>
+
+    <label for="ROOM-NUMBER-Y">Select Room for Y Hostel:</label>
+    <select id="ROOM-NUMBER-Y" name="ROOM-NUMBER-Y">
+        <option value="">SELECT ROOM NUMBER FOR Y HOSTEL</option>
+        <option value="Y101 A">Y101 A</option>
+        <option value="Y101 B">Y101 B</option>
+        <option value="Y102 A">Y102 A</option>
+        <option value="Y102 B">Y102 B</option>
+        <!-- Add more options here for Y Hostel -->
+    </select>
+
+    <br><br>
+
+    <label for="ROOM-NUMBER-Z">Select Room for Z Hostel:</label>
+    <select id="ROOM-NUMBER-Z" name="ROOM-NUMBER-Z">
+        <option value="">SELECT ROOM NUMBER FOR Z HOSTEL</option>
+        <option value="Z101 A">Z101 A</option>
+        <option value="Z101 B">Z101 B</option>
+        <option value="Z102 A">Z102 A</option>
+        <option value="Z102 B">Z102 B</option>
+        <!-- Add more options here for Z Hostel -->
+    </select>
+
+    <br><br>
+
+    <!-- Search Button -->
+    <button onclick="searchRoom()">Search</button>
+
+</body>
+</html>
